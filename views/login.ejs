@@ -1,0 +1,155 @@
+
+<html>
+<head>
+<title>Personal-pack. - 회원가입</title>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=EUC-KR">
+<meta name="description" content="Personal-pack.">
+<meta name="keywords" content="퍼스널팩,남성의류,패션">
+
+<link href="stylesheets/style.css" rel="stylesheet" type="text/css">
+<script language="javascript" src='/javascripts/script.js' charset='EUC-KR'>
+
+//var subtitle_id = {'className':'subtitle','gapTop':5 };
+</script>
+<img id ="subtitle_info" style="position:absolute; display:none"  />
+
+<link rel="shortcut icon" href="/shopimages/personalp77/favicon.ico" type="image/x-icon">
+</head>
+<IFRAME id=loginiframe name=loginiframe style="display:none" frameborder='no' scrolling=no></IFRAME>
+<div id="basketpage" name="basketpage" style="position:absolute; visibility:hidden;"></div>
+<!--<script language="Javascript" src='https://secure.makeshop.co.kr/ssl/js/new_fsecure.js?ver=20140825' charset='EUC-KR'></script>-->
+
+</head>
+
+<body bgcolor="white" topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 onload="document.form1.id.focus()">
+
+
+<!--<script type='text/javascript' src='/javascripts/bookmark.js'></script>
+<script type="text/javascript" src="/javascripts/design_func.js"></script>
+-->
+<script type="text/javascript" src="/javascripts/flash.js"></script>
+<meta http-equiv="ImageToolbar" content="No">
+<div id="ysfss_bar_container" style="position:absolute; top:0px; left:0px;"></div>
+<div id=maketop style='width:100%'>
+
+<% include top %>
+
+<form action="/shop/shopbrand.html" method=post name=search>
+<td valign=top width=150 height=100% id=mk_left>
+<% include left %>
+            <script>
+                // login id setting
+                if(typeof document.search != "undefined" && typeof document.search.id != "undefined" && typeof document.search.save_id != "undefined") {
+                    document.search.id.value = getCookieMS('save_id');
+                    if(document.search.id.value=="null") document.search.id.value="";
+                    if(typeof document.search.id != "undefined" && document.search.id.value.length>0) document.search.save_id.checked=true; 
+                }
+            </script></td></form>
+<form name=formlogin method=post action=/html/mainm.html>
+<input type=hidden name=id><input type=hidden name=passwd>
+<input type=hidden name=type value=login>
+<input type=hidden name=returnurl value="/shop/member.html?type=login">
+<input type=hidden name=ssl>
+<input type=hidden name=sslid value="personalp77">
+<input type=hidden name=sslip value="www.personal-pack.com">
+<input type=hidden name=formname value='formlogin'>
+<input type=hidden name=sendfunc value='formnewsend'>
+<input type=hidden name=msecure_key>
+<input type=hidden name=save_id>
+</form>
+<td valign=top width=640 align=center id=mk_center>
+<!-------------전체 테이블---------------->
+<table border=0 cellpadding=0 cellspacing=0 width=570>
+
+<!--회원 로그인 -->
+<tr>
+<form action="/login" method=post name=form1>
+<input type=hidden name=type value="login">
+<input type=hidden name=code value="">
+<input type=hidden name=mcode value="">
+<input type=hidden name=scode value="">
+<input type=hidden name=xtype value="">
+<input type=hidden name=startdate value="">
+<input type=hidden name=auctionnum value="">
+<input type=hidden name=auction_uid value="">
+<input type=hidden name=gongcode value="">
+<input type=hidden name=brandcode value="">
+<input type=hidden name=branduid value="">
+<input type=hidden name=sslid value="personalp77">
+<input type=hidden name=sslip value="www.personal-pack.com">
+<input type=hidden name=msecure_key>
+<input type="hidden" name="returnurl" value="http://www.personal-pack.com/html/mainm.html?ref=http%3A%2F%2Fwww.personal-pack.com%2Fhtml%2Fmainm.html%3Ftype%3Dlogout">
+<td class="woong">
+<table border=0 cellpadding=0 cellspacing=0 width=1300 align="center">
+<tr><td class=line height=0> </td></tr>
+
+<tr><td colspan=2 height=30 class='line'> </td></tr> 
+<tr><td colspan=2 align=center>
+  <table border=0 cellpadding=0 cellspacing=0 width=590> 
+  <tr><td colspan=3><img src="/images/design/personalp77/packup/login1.gif"></td>
+  </tr>
+  </table>
+<br>
+<br>
+<table width="700" height="237" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+  <tr>
+    <td colspan="3"><img src="/images/design/personalp77/packup/login_01-2.gif" width="700" height="94" alt=""></td>
+  </tr>
+  <tr>
+    <td rowspan="3" width="140" height="124"><!--<img src="/images/design/personalp77/packup/login_02.gif"  alt="">--></td>
+    <td colspan="2"><table id="Table_04" width="560" height="56" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="/images/design/personalp77/packup/login_03.gif" width="69" height="29" alt=""></td>
+        <td width="265" height="29" align="center"><input type=text name=id size=15 maxlength=20 tabindex="1" style="border:solid 1 #DDDDDD;background-color:white;height:19px; width:250px"></td>
+        <td rowspan="2"><a href=JavaScript:check()><img src="/images/design/personalp77/packup/login_05.gif" alt="" width="113" height="56" border="0"></a></td>
+        <td rowspan="2" width="113" height="56"><!--<img src="/images/d2/90025/login_06.jpg" width="113" height="56" alt="">--></td>
+      </tr>
+      <tr>
+        <td><img src="/images/design/personalp77/packup/login_04.gif" width="69" height="27" alt=""></td>
+        <td width="265" height="27" align="center"><input type=password name=passwd size=15 maxlength=20 tabindex="2" onKeyDown="CheckKey()" style="border:solid 1 #DDDDDD;background-color:white;height:19px; width:250px"></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="31" colspan="2" align="center" style="padding:0 0 0 50px"><input type=checkbox name=ssl value='Y'> <a href=JavaScript:clickssl() style="color:#999999">보안 접속</a></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table id="Table_03" width="560" height="37" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><a href=/shop/idinfo.html?type=new><img src="/images/design/personalp77/packup/login_10-1.gif" alt="" width="126" height="37" border="0"></a></td>
+        <td><a href=/shop/lostpass.html><img src="/images/design/personalp77/packup/login_11-1.gif" alt="" width="208" height="37" border="0"></a></td>
+        <td width="226" height="37"><!--<img src="/images/d2/90025/login_12.jpg" width="226" height="37" alt="">--></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="3" width="700" height="19"><!--<img src="/images/design/personalp77/packup/login_13.gif" width="700" height="19" alt="">--></td>
+  </tr>
+</table>
+ <tr><td class="line" height=10> </td></tr>
+</table></td></tr>
+<tr><td class="line" height=10> </td></tr>
+
+</td></form>
+</tr>
+<!--회사 주소/ 전화-->
+<!--tr>
+<td id="mk_blank" class="woong" align=center style='padding:0px'-->
+
+<script type="text/javascript">
+    function nhn_anchor(pid) {
+        
+        
+    }
+</script>
+</table></td></tr><tr><td class=mkbottom colspan=4></form><table class=mkbottom width="1200" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="left" style="padding:5 0 0 0 ">
+  <tr>
+   <th scope="col"><IMG SRC="http://personalp77.img16.kr/MAINDOWN1.jpg"><BR>
+</th>
+  </tr>
+</table>
+</td></tr>
+</table>
+<script type="text/javascript" src="/javascripts/cookie.js"></script>
+<div><!-- ie8 back key free focus --></div></form></body></html>

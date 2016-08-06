@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'DoppioOne-Regular';
+	src: url(/stylesheets/DoppioOne-Regular.ttf) format('truetype');
+}
+
+table.top{
+	border: 0;
+	font-family: DoppioOne-Regular;
+}
+
+table.menu{
+	text-align: left;
+	width: 85px; 
+	border: 0;  
+	font-size:9pt; 
+}
+
+td {font-size:9pt; font-family: 굴림; }
+td.line {font-size:1pt; font-family: 굴림;}
+a{	background-color: none;text-decoration:none ; font-family: DoppioOne-Regular; color : inherit;}
+A:link { text-decoration:none; color:#000000;}
+A:visited { text-decoration:none; color:#000000;}
+A:hover { color:#dc143c; text-decoration:underline;}
+/** 할인상품 취소선 span.mk_discount_box span.mk_origin_price 연속으로 있어야 한다 **/
+                        .Main_newHeight {
+                            height:170px;
+                        }
